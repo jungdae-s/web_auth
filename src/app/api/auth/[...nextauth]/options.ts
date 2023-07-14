@@ -1,7 +1,6 @@
 import type { NextAuthOptions } from 'next-auth'
 import GitHubProvider from 'next-auth/providers/github'
 import KakaoProvider from 'next-auth/providers/kakao'
-import NaverProvider from 'next-auth/providers/Naver'
 import CredentialsProvider from 'next-auth/providers/credentials'
 
 export const options: NextAuthOptions = {
@@ -13,10 +12,6 @@ export const options: NextAuthOptions = {
         KakaoProvider({
             clientId: process.env.KAKAO_ID as string,
             clientSecret: process.env.KAKAO_SECRET as string,
-        }),
-        NaverProvider({
-            clientId: process.env.NAVER_ID as string,
-            clientSecret: process.env.NAVER_SECRET as string,
         }),
         CredentialsProvider({
             name: "Credentials",
