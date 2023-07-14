@@ -9,7 +9,7 @@ export default function ExtraPage() {
     const { data: session } = useSession({
         required: true,
         onUnauthenticated() {
-            redirect('/api/auth/signin?callbackUrl=/client')
+            redirect('/api/auth/signin?callbackUrl=/extra')
         }
     })
 
