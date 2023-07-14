@@ -1,0 +1,12 @@
+npm i
+
+npm i next-auth
+
+.env.local  파일생성
+
+NEXTAUTH_SECRET=openssl rand -base64 32
+GITHUB_ID=
+GITHUB_SECRET=
+
+ 
+
