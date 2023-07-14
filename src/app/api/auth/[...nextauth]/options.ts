@@ -12,7 +12,8 @@ export const options: NextAuthOptions = {
         KakaoProvider({
             clientId: process.env.KAKAO_ID as string,
             clientSecret: process.env.KAKAO_SECRET as string,
-        }),
+        }),  
+        //테스트
         CredentialsProvider({
             name: "Credentials",
             credentials: {
