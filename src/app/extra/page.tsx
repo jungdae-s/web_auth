@@ -12,7 +12,7 @@ export default function ExtraPage() {
             redirect('/api/auth/signin?callbackUrl=/extra')
         }
     })
-
+    //fff
     return (
         <section className="flex flex-col gap-6">
             <UserCard user={session?.user} pagetype={"Extra"} />
